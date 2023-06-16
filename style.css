@@ -1,57 +1,49 @@
+/* Arquivo style.css */
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
-.menu-container {
-  display: flex;
-  height: 100vh;
-}
-
-.toggle-button {
-  font-size: 20px;
-  margin: 20px;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.sidebar {
-  width: 200px;
-  background-color: #222;
-  color: #fff;
-  padding-top: 20px;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(-200px);
-}
-
-.sidebar.sidebar-active {
-  transform: translateX(0);
-}
-
-.sidebar ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar ul li {
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+.dropdown-menu li {
   padding: 10px;
 }
 
-.sidebar ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.content {
-  flex-grow: 1;
-  padding: 20px;
-}
-
-h1, p {
+.dropdown-menu li a {
   color: #333;
+}
+
+.dropdown-menu li:hover {
+  background-color: #e5e5e5;
 }
