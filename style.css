@@ -1,38 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
-  }
-  
-  h1, h2 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  blockquote {
-    border-left: 4px solid #333;
-    padding-left: 10px;
-  }
-  
-  footer {
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container {
+  display: flex;
+  height: 100vh;
+}
+
+.toggle-button {
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
