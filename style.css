@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 .menu-container {
@@ -12,13 +13,23 @@ body {
   font-size: 20px;
   margin: 20px;
   padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .sidebar {
   width: 200px;
-  background-color: #333;
+  background-color: #222;
   color: #fff;
   padding-top: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-200px);
+}
+
+.sidebar.sidebar-active {
+  transform: translateX(0);
 }
 
 .sidebar ul {
@@ -39,4 +50,8 @@ body {
 .content {
   flex-grow: 1;
   padding: 20px;
+}
+
+h1, p {
+  color: #333;
 }
